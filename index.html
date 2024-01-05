@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
   </head>
-  <body style="padding: 1rem;">
-    <div class="select">
-      <!-- Кнопка для открытия выпадающего списка -->
-      <button type="button" class="selectToggle" value="" data-index="-1">
-        <span class="buttonValue">Выберите опцию</span>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="wrapperDropdown" style="display: none;">
-        <!-- Поиск -->
-        <div class="wrapperSearch">
-          <div class="searchInput">
-            <input type="text">
-            <i class="fa fa-search" aria-hidden="true"></i>
+  <body>
+    <div style="padding: 1rem; width: 15rem;">
+      <div class="select">
+        <!-- Кнопка для открытия выпадающего списка -->
+        <button type="button" class="selectToggle" value="" data-index="-1">
+          <span class="buttonValue">Выберите опцию</span>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="wrapperDropdown" style="display: none;">
+          <!-- Поиск -->
+          <div class="wrapperSearch">
+            <div class="searchInput">
+              <input type="text">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- Выпадающий список -->
+          <div class="selectDropdown">
+            <ul class="selectOptions">
+              <li class="no_result" style="display: none;">Совпадений не найденно "лол"</li>
+            </ul>
           </div>
         </div>
-        <!-- Выпадающий список -->
-        <div class="selectDropdown">
-          <ul class="selectOptions">
-            <li class="no_result" style="display: none;">Совпадений не найденно "лол"</li>
-          </ul>
-        </div>
       </div>
+      <script src="select\select.js"></script>
     </div>
-    <script src="select\select.js"></script>
   </body>
 </html>
