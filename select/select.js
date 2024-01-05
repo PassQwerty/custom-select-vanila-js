@@ -35,6 +35,12 @@ window.addEventListener("DOMContentLoaded", () => {
   let selectOptionsArray = [];
 
   const toggleMenu = () => {
+    searchText = "";
+    searchInput.value = "";
+
+    updateOptionDisplay(show.BLOCK);
+    showSearchText(show.NONE);
+
     activeButton = !activeButton;
     selectButtonIcon.className = activeButton === false ? iconBottom : iconTop;
     wrapperDropdown.style.display = activeButton === false ? show.NONE : show.BLOCK;
