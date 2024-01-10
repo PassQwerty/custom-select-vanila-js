@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  // при 2 селектах заменить на querySelectorAll и selectOptions
-  const selectOptionsParent = document.querySelector(".selectOptions"); 
+  const selectOptionsParent = document.querySelector(".selectOptions");
 
   const initialArray = ["Volkswagen", "Ford", "Toyota", "Nissan"];
 
@@ -12,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     selectOptionsParent.append(elem);
   });
 
-  const selectButton = document.querySelector(".selectToggle");// при 2 селектах заменить на selectOptions2
+  const selectButton = document.querySelector(".selectToggle");
   const selectButtonValue = selectButton.querySelector(".buttonValue");
   const selectButtonIcon = selectButton.querySelector("i");
 
@@ -20,8 +19,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const selectOptions = document.querySelectorAll(
     ".selectOptions li:not(.no_result)"
-  );// при 2 селектах заменить на selectOptions2
-  const searchNoResult = document.querySelector(".selectOptions .no_result"); // при 2 селектах заменить на selectOptions2
+  );
+  const searchNoResult = document.querySelector(".selectOptions .no_result");
 
   const wrapperDropdown = document.querySelector(".wrapperDropdown");
 
